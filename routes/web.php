@@ -14,7 +14,4 @@ use App\Http\Controllers\PokemonController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/pokemon/{nome}', [PokemonController::class, 'pokemon']);
+Route::get('/pokemon/{nome}', [PokemonController::class, 'nomePokemon']);

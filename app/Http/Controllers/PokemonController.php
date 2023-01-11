@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class PokemonController extends Controller
 {
-    public function pokemon($nome){
-        $nome = 'picachu';
+    public function nomePokemon($nome){
+        $nome = $nome;
         
         return view('pokemon', compact('nome'));
     }
